@@ -32,7 +32,7 @@ def day2_part2(password_list: List[str]) -> int:
         password_len = len(password)
         index_1_valid = index_1 < password_len and password[index_1] == letter
         index_2_valid = index_2 < password_len and password[index_2] == letter
-        if (index_1_valid or index_2_valid) and index_1_valid != index_2_valid:
+        if index_1_valid != index_2_valid:
             num_valid_passwords += 1
     return num_valid_passwords
 

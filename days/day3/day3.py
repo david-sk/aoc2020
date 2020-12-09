@@ -34,6 +34,6 @@ def day3_part2(locations: List[str]) -> int:
 
 
 if __name__ == '__main__':
-    password_list = get_locations()
-    print('Day3, part1 answer:', day3_part1(password_list))
-    print('Day3, part2 answer:', day3_part2(password_list))
+    locations = get_locations()
+    print('Day3, part1 answer:', day3_part1(locations))
+    print('Day3, part2 answer:', day3_part2(locations))
