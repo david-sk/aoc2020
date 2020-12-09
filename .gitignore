@@ -13,3 +13,7 @@ venv/
 
 # mypy:
 .mypy_cache/
+
+# Editors/IDE:s
+
+.vscode
