@@ -15,7 +15,7 @@ def get_sorted_report() -> List[int]:
 def day1_part1(report: List[int]) -> int:
     SUM_TARGET = 2020
     for i, entry in enumerate(report[:-1]):
-        for other_entry in report[i + 1:]:
+        for other_entry in report[i + 1 :]:
             sum_value = entry + other_entry
             if sum_value > SUM_TARGET:
                 break
@@ -27,11 +27,11 @@ def day1_part1(report: List[int]) -> int:
 def day1_part2(report: List[int]) -> int:
     SUM_TARGET = 2020
     for i, entry in enumerate(report[:-2]):
-        for j, second_entry in enumerate(report[i + 1:]):
+        for j, second_entry in enumerate(report[i + 1 :]):
             first_two_entries_sum = entry + second_entry
             if first_two_entries_sum > SUM_TARGET:
                 break
-            for third_entry in report[j + 1:]:
+            for third_entry in report[j + 1 :]:
                 sum_value = first_two_entries_sum + third_entry
                 if sum_value > SUM_TARGET:
                     break

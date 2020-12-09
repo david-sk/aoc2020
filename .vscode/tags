@@ -4,26 +4,25 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
-AnyStr	../day2/day2.py	/^from typing import List, AnyStr$/;"	kind:namespace	line:5
-AnyStr	../day3/day3.py	/^from typing import List, AnyStr$/;"	kind:namespace	line:5
-List	../day1/day1.py	/^from typing import List$/;"	kind:namespace	line:5
-List	../day2/day2.py	/^from typing import List, AnyStr$/;"	kind:namespace	line:5
-List	../day3/day3.py	/^from typing import List, AnyStr$/;"	kind:namespace	line:5
-__init__.py	../day1/__init__.py	1;"	kind:file	line:1
-__init__.py	../day2/__init__.py	1;"	kind:file	line:1
-__init__.py	../day3/__init__.py	1;"	kind:file	line:1
-day1.py	../day1/day1.py	1;"	kind:file	line:1
-day1_part1	../day1/day1.py	/^def day1_part1(report: List[int]) -> int:$/;"	kind:function	line:15
-day1_part2	../day1/day1.py	/^def day1_part2(report: List[int]) -> int:$/;"	kind:function	line:27
-day2.py	../day2/day2.py	1;"	kind:file	line:1
-day2_part1	../day2/day2.py	/^def day2_part1(password_list: List[AnyStr]) -> int:$/;"	kind:function	line:13
-day2_part2	../day2/day2.py	/^def day2_part2(password_list: List[AnyStr]) -> int:$/;"	kind:function	line:25
-day3.py	../day3/day3.py	1;"	kind:file	line:1
-day3_part1	../day3/day3.py	/^def day3_part1(locations: List[AnyStr]) -> int:$/;"	kind:function	line:13
-day3_part2	../day3/day3.py	/^def day3_part2(locations: List[AnyStr]) -> int:$/;"	kind:function	line:23
-get_locations	../day3/day3.py	/^def get_locations() -> List[AnyStr]:$/;"	kind:function	line:8
-get_password_list	../day2/day2.py	/^def get_password_list() -> List[AnyStr]:$/;"	kind:function	line:8
-get_sorted_report	../day1/day1.py	/^def get_sorted_report() -> List[int]:$/;"	kind:function	line:8
-password_list	../day2/day2.py	/^    password_list = get_password_list()$/;"	kind:variable	line:41
-password_list	../day3/day3.py	/^    password_list = get_locations()$/;"	kind:variable	line:37
-report	../day1/day1.py	/^    report = get_sorted_report()$/;"	kind:variable	line:44
+List	../days/day1/day1.py	/^from typing import List$/;"	kind:namespace	line:5
+List	../days/day2/day2.py	/^from typing import List$/;"	kind:namespace	line:5
+List	../days/day3/day3.py	/^from typing import List$/;"	kind:namespace	line:5
+__init__.py	../days/__init__.py	1;"	kind:file	line:1
+__init__.py	../days/day1/__init__.py	1;"	kind:file	line:1
+__init__.py	../days/day2/__init__.py	1;"	kind:file	line:1
+__init__.py	../days/day3/__init__.py	1;"	kind:file	line:1
+day1.py	../days/day1/day1.py	1;"	kind:file	line:1
+day1_part1	../days/day1/day1.py	/^def day1_part1(report: List[int]) -> int:$/;"	kind:function	line:15
+day1_part2	../days/day1/day1.py	/^def day1_part2(report: List[int]) -> int:$/;"	kind:function	line:27
+day2.py	../days/day2/day2.py	1;"	kind:file	line:1
+day2_part1	../days/day2/day2.py	/^def day2_part1(password_list: List[str]) -> int:$/;"	kind:function	line:13
+day2_part2	../days/day2/day2.py	/^def day2_part2(password_list: List[str]) -> int:$/;"	kind:function	line:25
+day3.py	../days/day3/day3.py	1;"	kind:file	line:1
+day3_part1	../days/day3/day3.py	/^def day3_part1(locations: List[str]) -> int:$/;"	kind:function	line:13
+day3_part2	../days/day3/day3.py	/^def day3_part2(locations: List[str]) -> int:$/;"	kind:function	line:23
+get_locations	../days/day3/day3.py	/^def get_locations() -> List[str]:$/;"	kind:function	line:8
+get_password_list	../days/day2/day2.py	/^def get_password_list() -> List[str]:$/;"	kind:function	line:8
+get_sorted_report	../days/day1/day1.py	/^def get_sorted_report() -> List[int]:$/;"	kind:function	line:8
+password_list	../days/day2/day2.py	/^    password_list = get_password_list()$/;"	kind:variable	line:41
+password_list	../days/day3/day3.py	/^    password_list = get_locations()$/;"	kind:variable	line:37
+report	../days/day1/day1.py	/^    report = get_sorted_report()$/;"	kind:variable	line:44

@@ -2,15 +2,15 @@
 # https://adventofcode.com/2020/day/2
 #
 
-from typing import List, AnyStr
+from typing import List
 
 
-def get_password_list() -> List[AnyStr]:
+def get_password_list() -> List[str]:
     with open('day2.input.txt') as f:
         return [line for line in f.readlines() if line]
 
 
-def day2_part1(password_list: List[AnyStr]) -> int:
+def day2_part1(password_list: List[str]) -> int:
     num_valid_passwords = 0
     for entry in password_list:
         left, right = entry.split(':')
@@ -22,7 +22,7 @@ def day2_part1(password_list: List[AnyStr]) -> int:
     return num_valid_passwords
 
 
-def day2_part2(password_list: List[AnyStr]) -> int:
+def day2_part2(password_list: List[str]) -> int:
     num_valid_passwords = 0
     for entry in password_list:
         left, right = entry.split(':')
