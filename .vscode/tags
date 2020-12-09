@@ -1,0 +1,21 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+AnyStr	../day2/day2.py	/^from typing import List, AnyStr$/;"	kind:namespace	line:5
+List	../day1/day1.py	/^from typing import List$/;"	kind:namespace	line:5
+List	../day2/day2.py	/^from typing import List, AnyStr$/;"	kind:namespace	line:5
+__init__.py	../day1/__init__.py	1;"	kind:file	line:1
+__init__.py	../day2/__init__.py	1;"	kind:file	line:1
+day1.py	../day1/day1.py	1;"	kind:file	line:1
+day1_part1	../day1/day1.py	/^def day1_part1(report: List[int]) -> int:$/;"	kind:function	line:15
+day1_part2	../day1/day1.py	/^def day1_part2(report: List[int]) -> int:$/;"	kind:function	line:27
+day2.py	../day2/day2.py	1;"	kind:file	line:1
+day2_part1	../day2/day2.py	/^def day2_part1(password_list: List[AnyStr]) -> int:$/;"	kind:function	line:13
+day2_part2	../day2/day2.py	/^def day2_part2(password_list: List[AnyStr]) -> int:$/;"	kind:function	line:25
+get_password_list	../day2/day2.py	/^def get_password_list() -> List[AnyStr]:$/;"	kind:function	line:8
+get_sorted_report	../day1/day1.py	/^def get_sorted_report() -> List[int]:$/;"	kind:function	line:8
+password_list	../day2/day2.py	/^    password_list = get_password_list()$/;"	kind:variable	line:41
+report	../day1/day1.py	/^    report = get_sorted_report()$/;"	kind:variable	line:44
