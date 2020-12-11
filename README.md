@@ -12,3 +12,27 @@ python3 dayX.py
 ```
 
 where X is a AOC day number.
+
+# Editor
+
+If using VS Code as text editor, here is some handy config stuff for `.vscode/settings.json` file:
+
+```
+{
+    "editor.formatOnSave": true,
+    "files.trimTrailingWhitespace": true,
+    "python.linting.enabled": true,
+    "python.linting.flake8Enabled": true,
+    "python.linting.flake8Args": [
+        "--config=.config/flake8.cfg"
+    ],
+    "python.linting.mypyEnabled": true,
+    "python.linting.mypyArgs": [
+        "--config-file=.config/mypy.cfg"
+    ],
+    "python.formatting.provider": "black",
+    "python.formatting.blackArgs": [
+        "--config=.config/black.cfg"
+    ]
+}
+```
