@@ -13,7 +13,7 @@ python3 dayX.py
 
 where X is a AOC day number.
 
-# Editor
+## Editor
 
 If using VS Code as text editor, here is some handy config stuff for `.vscode/settings.json` file:
 
