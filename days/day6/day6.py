@@ -3,10 +3,11 @@
 #
 
 from typing import List, Set, Optional
+from os import path
 
 
 def get_answers() -> List[str]:
-    with open('day6.input.txt') as f:
+    with open(path.join(path.dirname(__file__), 'input.txt')) as f:
         return [line.strip() for line in f.readlines() if line]
 
 
@@ -37,7 +38,7 @@ def day6_part2(answers: List[str]) -> int:
     return total
 
 
-if __name__ == '__main__':
+def main() -> None:
     answers = get_answers()
     answers.append('')
     print('Day6, part1 answer:', day6_part1(answers))

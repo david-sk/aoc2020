@@ -3,6 +3,7 @@
 #
 
 from typing import List, Dict, Tuple, Set
+from os import path
 
 
 Rules = Dict[str, List[Tuple[str, int]]]
@@ -10,7 +11,7 @@ Rules = Dict[str, List[Tuple[str, int]]]
 
 def get_rules() -> Rules:
     def get_rule_lines() -> List[str]:
-        with open('day7.input.txt') as f:
+        with open(path.join(path.dirname(__file__), 'input.txt')) as f:
             return [line.strip() for line in f.readlines() if line]
 
     rules: Rules = {}
@@ -53,7 +54,7 @@ def day7_part2(rules: Rules) -> int:
     return find_amount('shiny gold')
 
 
-if __name__ == '__main__':
+def main() -> None:
     rules = get_rules()
     print('Day7, part1 answer:', day7_part1(rules))
     print('Day7, part2 answer:', day7_part2(rules))

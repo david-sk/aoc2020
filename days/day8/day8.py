@@ -3,10 +3,11 @@
 #
 
 from typing import List, Set
+from os import path
 
 
 def get_instructions() -> List[str]:
-    with open('day8.input.txt') as f:
+    with open(path.join(path.dirname(__file__), 'input.txt')) as f:
         return [line.strip() for line in f.readlines() if line]
 
 
@@ -63,7 +64,7 @@ def day8_part2(instructions: List[str]) -> int:
     return run_instruction(0, True)
 
 
-if __name__ == '__main__':
+def main() -> None:
     instructions = get_instructions()
     print('Day8, part1 answer:', day8_part1(instructions))
     print('Day8, part2 answer:', day8_part2(instructions))

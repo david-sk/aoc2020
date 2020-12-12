@@ -3,10 +3,11 @@
 #
 
 from typing import List
+from os import path
 
 
 def get_sorted_report() -> List[int]:
-    with open('day1.input.txt') as f:
+    with open(path.join(path.dirname(__file__), 'input.txt')) as f:
         report = [int(line) for line in f.readlines() if line]
         report.sort()
         return report
@@ -40,7 +41,7 @@ def day1_part2(report: List[int]) -> int:
     return -1
 
 
-if __name__ == '__main__':
+def main() -> None:
     report = get_sorted_report()
     print('Day1, part1 answer:', day1_part1(report))
     print('Day1, part2 answer:', day1_part2(report))

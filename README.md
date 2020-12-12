@@ -7,11 +7,8 @@ Using Python 3 (version 3.8 or above recommended).
 Execute a program with:
 
 ```
-cd days/dayX
-python3 dayX.py
+python3 -m days [day_number]
 ```
-
-where X is a AOC day number.
 
 ## Editor
 

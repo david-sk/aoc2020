@@ -3,10 +3,11 @@
 #
 
 from typing import List
+from os import path
 
 
 def get_locations() -> List[str]:
-    with open('day3.input.txt') as f:
+    with open(path.join(path.dirname(__file__), 'input.txt')) as f:
         return [line.strip() for line in f.readlines() if line]
 
 
@@ -33,7 +34,7 @@ def day3_part2(locations: List[str]) -> int:
     return result
 
 
-if __name__ == '__main__':
+def main() -> None:
     locations = get_locations()
     print('Day3, part1 answer:', day3_part1(locations))
     print('Day3, part2 answer:', day3_part2(locations))

@@ -3,10 +3,11 @@
 #
 
 from typing import List
+from os import path
 
 
 def get_password_list() -> List[str]:
-    with open('day2.input.txt') as f:
+    with open(path.join(path.dirname(__file__), 'input.txt')) as f:
         return [line for line in f.readlines() if line]
 
 
@@ -37,7 +38,7 @@ def day2_part2(password_list: List[str]) -> int:
     return num_valid_passwords
 
 
-if __name__ == '__main__':
+def main() -> None:
     password_list = get_password_list()
     print('Day2, part1 answer:', day2_part1(password_list))
     print('Day2, part2 answer:', day2_part2(password_list))

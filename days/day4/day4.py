@@ -3,6 +3,7 @@
 #
 
 from typing import List, Dict, Optional
+from os import path
 import re
 
 
@@ -10,7 +11,7 @@ PASSPORT_MANDATORY_FIELDS = ('byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid')
 
 
 def get_passports() -> List[str]:
-    with open('day4.input.txt') as f:
+    with open(path.join(path.dirname(__file__), 'input.txt')) as f:
         return [line.strip() for line in f.readlines() if line]
 
 
@@ -78,7 +79,7 @@ def day4_part2(passports: List[str]) -> int:
     return num_valid_passports
 
 
-if __name__ == '__main__':
+def main() -> None:
     passports = get_passports()
     print('Day4, part1 answer:', day4_part1(passports))
     print('Day4, part2 answer:', day4_part2(passports))

@@ -3,10 +3,11 @@
 #
 
 from typing import List
+from os import path
 
 
 def get_numbers() -> List[int]:
-    with open('day9.input.txt') as f:
+    with open(path.join(path.dirname(__file__), 'input.txt')) as f:
         return [int(line.strip()) for line in f.readlines() if line]
 
 
@@ -37,7 +38,7 @@ def day9_part2(numbers: List[int]) -> int:
     return -1
 
 
-if __name__ == '__main__':
+def main() -> None:
     numbers = get_numbers()
     print('Day9, part1 answer:', day9_part1(numbers))
     print('Day9, part2 answer:', day9_part2(numbers))

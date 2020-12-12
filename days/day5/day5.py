@@ -3,10 +3,11 @@
 #
 
 from typing import List
+from os import path
 
 
 def get_boarding_passes() -> List[str]:
-    with open('day5.input.txt') as f:
+    with open(path.join(path.dirname(__file__), 'input.txt')) as f:
         return [line.strip() for line in f.readlines() if line]
 
 
@@ -52,7 +53,7 @@ def day5_part2(boarding_passes: List[str]) -> int:
     return -1
 
 
-if __name__ == '__main__':
+def main() -> None:
     boarding_passes = get_boarding_passes()
     print('Day5, part1 answer:', day5_part1(boarding_passes))
     print('Day5, part2 answer:', day5_part2(boarding_passes))
