@@ -30,11 +30,9 @@ def day10_part2(sorted_jolts: List[int]) -> int:
     # getting the longest arrangement possible
     longest_arrangement = [sorted_jolts[0]]
     for i, jolt in enumerate(sorted_jolts[:-1]):
-        if sorted_jolts[i + 1] - jolt in (1, 3):
-            longest_arrangement.append(sorted_jolts[i + 1])
-        else:
-            longest_arrangement.append(longest_arrangement[-1] + 3)
+        if sorted_jolts[i + 1] - jolt not in (1, 3):
             break
+        longest_arrangement.append(sorted_jolts[i + 1])
 
     # split the longest arrangement into chunks of 1 jolt differences, e.g.: [[1, 2], [5, 6], ...]
     arrangement_chunks_indexes = [
@@ -49,17 +47,17 @@ def day10_part2(sorted_jolts: List[int]) -> int:
         previous_index = arrangement_chunks_index
     arrangement_chunks.append(longest_arrangement[previous_index:])
 
-    # using recursion to count arrangements while removing possible jolt from the arrangement input
+    # using recursion to count arrangements by removing possible jolts from the arrangement input
     def count_arrangements_by_removing_jolts(arrangement: List[int], start: int) -> int:
         return 1 + sum(
             count_arrangements_by_removing_jolts(arrangement[:i] + arrangement[i + 1 :], i)
-            for i, _ in enumerate(arrangement[start:-1], start=start)
+            for i in range(start, len(arrangement) - 1)
             if 0 < arrangement[i + 1] - arrangement[i - 1] <= 3
         )
 
-    # the solution is the product of each count of arrangements for each chunk
-    # note that we add the outer left/right jolts on each chunk that can't be
-    # removed which is expected by the `count_arrangements_by_removing_jolts` function
+    # the solution is the product of each count of arrangements for each chunk,
+    # note that we add the outer left/right jolts on each chunk to make the
+    # `count_arrangements_by_removing_jolts` function work properly
     return prod(
         count_arrangements_by_removing_jolts(
             [max(0, arrangement_chunk[0] - 3)] + arrangement_chunk + [arrangement_chunk[-1] + 3], 1
