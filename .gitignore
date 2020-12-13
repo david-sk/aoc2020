@@ -1,19 +1,15 @@
-# Internal Python stuff:
+# Internal Python stuff
 __pycache__/
 *.py[cod]
 *$py.class
-
-# Local volumes
-.volumes
 
 # Local environment
 .env
 .venv
 venv/
 
-# mypy:
+# mypy
 .mypy_cache/
 
 # Editors/IDE:s
-
-.vscode
+.vscode/
