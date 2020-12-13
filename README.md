@@ -1,6 +1,6 @@
 # AOC 2020
 
-See <https://adventofcode.com/2020>.
+Advent of Code 2020. See <https://adventofcode.com/2020>.
 
 Using Python 3 (version 3.8 or above recommended).
 
