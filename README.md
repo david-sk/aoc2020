@@ -10,6 +10,14 @@ Execute a program with:
 python3 -m days [day_number]
 ```
 
+For example:
+
+```
+python3 -m days 3
+
+python3 -m days 10
+```
+
 ## Editor
 
 If using VS Code as text editor, here is some handy config stuff for `.vscode/settings.json` file:
